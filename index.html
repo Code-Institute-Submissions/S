@@ -1,36 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/carousel.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <title>Shahinoor Alom</title>
-</head>
+  </head>
 
-<body>
-	<header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Carousel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link py-2 d-none d-md-inline-block" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 d-none d-md-inline-block" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-2 d-none d-md-inline-block" href="#contact">Contact</a>
+                    </li>
                 </ul>
+            </div>
         </nav>
+        <!-------Nav Bar-------->
+        <!-- <nav class="site-header sticky-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 d-none d-md-inline-block" href="#about">About</a>
+            <a class="py-2 d-none d-md-inline-block" href="#resume">Resume</a>
+            <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
         </div>
-	</header>
+        </nav> -->
+    </header>
 
-<section>
+    <main role="main">
+    <!-------Carousel-------->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                <img src="assets/img/laptop.jpg" />
+                <div class="container">
+                <div class="carousel-caption text-left">
+                    <h1>Full Stack Web Developer</h1>
+                    <p>Whatever your needs, be it front-end, back-end, website managment, website design or anything to do with promoting your organisation we can help find solutions for you.
+                    The lovely Code Institute have given me the tools to succeed in making you succeed!</p>
+                    <p><a class="btn btn-lg btn-primary" href="https://b766dc88-1b46-4147-aa65-01be33e41e02.ws-eu01.gitpod.io/files/download/?id=be6e1e65-9bf6-418e-b70c-868f8527bd3a"" role="button"> Download PDF Resume</a></p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                <img src="assets/img/htmlcss.jpeg" />
+                <div class="container">
+                <div class="carousel-caption text-right">
+                    <h1>Get in touch</h1>
+                    <p><a class="btn btn-lg btn-primary" href="#contact" role="button">Contact Us</a></p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </div>
 
-</section>
+        <!-------About-------->
+        <section id="about"> 
+            <div class="background-img">     
+                <div class="p-3 p-md-5 m-md-3 text-center bg-light">
+                    <div class="col-md-5 p-lg-5 mx-auto my-5">
+                        <h1 class="display-4 font-weight-normal">Shahinoor Alom</h1>
+                        <p class="lead font-weight-normal">I'm an aspiring fullstack web developer</p>
+                        <p class="lead">Currently studying a Diploma in Fullstack Web Development with the Code Institute. 
+                        I am a young ambitious fullstack developer, eager to learn and 
+                        continuously develop my skillsets in using HTML, CSS, Javascript, Django, Python, MySQL, MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<footer>
+        <!-------Resume-------->
+        <section id="resume"> 
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+            <h2 class="display-5">Work History</h2>
+            <p class="lead">
+            I have a vast range of experiences growing up as a young adult from having worked in the food catering sector to customer service to retail to market research and currently teaching maths in a secondary school setting. These experiences have given me a wide range of soft skills such as time management, organisation, networking, communication, team-work, leadership and problem solving. I very adaptable to any given situation and always hold a positive outlook on life. 
+            <ul>
+            <p><li> <h5> September 2017 - August 2020</h5> Mathematics Teacher, Fitzalan High School</li></p>
+            <p><li> <h5> July 2015 - February 2016</h5> Market Research Interviewer, Inspired Market Research</li></p>
+            <p><li> <h5> October 2015 - February 2016</h5> Retail Assistant, Poundworld</li></p>
+            <p><li> <h5> June 2014 - September 2014</h5> Customer Service Agent, Southern Rail</li></p>
+            <p><li> <h5> January 2008 - February 2012</h5> Takeaway Catering Assistant, Massala Junction</li></p>
+            </ul>
+            </p>
+            </div>
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+            <h2 class="display-5">Educational Achievements</h2>
+    <p class="lead"> 
+    I am currently enrolled on a fantastic fullstack development course organised by <I>The Code Institute.</I> I have a love for subjects that reuqire a high level of analysis and quantitative methods. The following is a brief chronology of my educational career which I aim to populate more as I gain age.
+            <ul>
+            <p><li> <h5> January 2020 - Present</h5>Fullstack Development Diploma<p>The Code Institute</p></li></p>
+            <p><li> <h5> September 2016 - July 2017</h5>PGCE with QTS, Secondary Maths <p>Gloucestershire Initial Teacher Education Partnership</p></li></p>
+            <p><li> <h5> September 2015 - September 2016</h5> MSc Financial Economics<p>Cardiff University</p></li></p>
+            <p><li> <h5> September 2012 - July 2015</h5>BSc  Economics<p>Cardiff University</li></p>
+            </ul>
+            </p>
+            </div>
+        </div>
+        </div>
+        </section>
 
-</footer>
-</body>
+        <!-------Contact-------->
+        <section id="contact">
+            <!-- Section heading -->
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+                <h2 class="h1-responsive font-weight-bold text-center my-5 font-weight-normal">Get in touch</h2>
+                <p class="text-center w-responsive mx-auto mb-5 lead font-weight-normal">For project inqueries or to find out more information about my services and 
+                what I can offer, please fill the form below detailing your request or feel free to connect with me on social media.</p>
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-12 mb-md-0 mb-5">
+                    <form>
+                        <!-- Grid row -->
+                        <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                            <p> <label for="contact-name" class="">Name</label> </p>
+                            <p> <input type="text" id="contact-name" class="form-control"></p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                    <p> <label for="contact-email" class="">Email Address</label> </p>
+                            <p> <input type="text" id="contact-email" class="form-control"> </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                        <p> <label for="contact-Subject" class="">Subject</label></p>
+                            <p> <input type="text" id="contact-Subject" class="form-control"></p>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        </div>
+
+                        <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                    <p> <label for="contact-message">Message</label></p>
+                            <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                        <div class="text-center text-md-center my-5">
+                        <p> <button type="submit" class="btn btn-primary">Send</button></p>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center align-middle">
+                <h2 class="h1-responsive font-weight-bold text-center my-5 font-weight-normal">Address</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                            <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+                            <h6>Loftus Avenue, Newport, South Wales</h6>
+                            </li>
+                            <li>
+                            <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+                            <h6>+44 7771 515 236</h6>
+                            </li>
+                            <li>
+                            <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                            <h6 class="mb-0">alom.shahinoor@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    <!-- Section: Contact v.2 -->
+
+
+        <footer class="footer bg-yellow">
+        <div class="container d-flex flex-column flex-md-row justify-content-between bottom">
+            <div class="col-md">
+            <a href="#about"> <h5>About</h5></a>
+            </div>
+            <div class="col-md">
+            <a href="https://b766dc88-1b46-4147-aa65-01be33e41e02.ws-eu01.gitpod.io/files/download/?id=be6e1e65-9bf6-418e-b70c-868f8527bd3a"> 
+            <h5>Download CV</h5></a>
+            </div>
+            <div class=" col-md">
+            <h5>Connect on Social Media</h5>
+            <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/shumonsta99">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://twitter.com/hikmaths16">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/in/shahinooralom/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+            </div>
+        </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
