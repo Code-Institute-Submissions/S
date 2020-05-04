@@ -71,9 +71,10 @@ To run locally, you can clone this repository directly into the editor of your c
 ## Credits
 
 ### Content
-All content in the "About Me/À Propos" and "Work/Travail" sections in this portfolio site were written by me. 
+All content on the website were written by me. 
 
 ### Media
+
 All photos were taken from [Pexels](https://www.pexels.com/), a stock image library, with the exception of the photo of myself in the background of the 'about me/À Propos' section in the desktop view. A greyscale filter was applied to each one prior to upload to preserve the greyscale theme. 
 
 ### Acknowledgements
