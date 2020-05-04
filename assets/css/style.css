@@ -6,25 +6,7 @@ body {
     max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
 
-.site-header {
-    background-color: rgba(32, 2, 53, 0.87);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-}
-
-.site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
-}
-
-.site-header a:hover {
-    color: rgb(238, 255, 2);
-    text-decoration: none;
-}
 
 /*
  * Carousel
@@ -37,17 +19,11 @@ img {
 /*
  * Background Image
  */
+ 
  .background-img {
-     background-image: url('/assets/img/shu15.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
+    background-image: url('/assets/img/shu15.jpg');
+    background-repeat:no-repeat;
  }
-
- .bg-transparent {
-     background: inherit;
- }
-
-
 
  /* 
  *Contct Form
@@ -56,6 +32,14 @@ img {
  .md-form {
     font-size: 25px;
  }
+
+ .button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 
 /*
  * Footer
@@ -86,6 +70,10 @@ img {
     -o-transition: all 0.35s ease-in-out;
  }
 
+ .list-inline-item {
+    padding: 20px;
+ } 
+
  .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -101,8 +89,8 @@ img {
     }
 }
 
-.bg-yellow {
-    background-color: yellow;
+.bg-color {
+    background-color: #e3edf9;
 }
 
 /* Bootstrap overrides */
