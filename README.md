@@ -6,7 +6,7 @@ The website highlights my skills and educational experiences, including my codin
 
 
 ## Demo
-A live demo can be found [here](https://www.haleyschafer.com/).
+A live demo can be found [here](https://www.shumonsta.github.io/S).
 
 ## UX
 
@@ -14,7 +14,7 @@ A live demo can be found [here](https://www.haleyschafer.com/).
 
 As a recruiter I expect to see a showcase of Shahinoor's resume.
 
-![Resume](SCREENSHOT "Resume")
+![Resume](/assets/READMEdocs/Resume_Section.jpg "Resume")
 
 ### Strategy
 I intended to make the design of the website as easy as possible to access the relevant information needed while making it user-friendly at the same time.
@@ -27,15 +27,8 @@ They can access information relating to my background, work I've done and my ski
 In the 'Work Experience' section, I want employers/recruiters/clients to be able to quickly access the work that I've done. I provided in the footer, a link to my LinkedIn profile, my twitter and facebook profile, and a downloadable PDF version of my CV.
 
 ### Skeleton
-[About wireframe]()
-
-[Contact wireframe]()
-
-[Landing Page wireframe]()
-
-[Skills wireframe]()
-
-[Work wireframe]()
+I followed the skeleton of the example bootstrap pages. 
+Header (Navbar) -> Carousel -> About -> Resume -> Contact -> Footer
 
 ### Surface
 A grey and black color scheme was chosen to create a sleek and modern feel.
@@ -52,34 +45,34 @@ This site uses the scrollSpy feature in Bootstrap with an extra JavaScript funct
 I would like to add a space on the website where I showcase a portfolio of my web projects. I would like to also add animations and a progress bar on the different coding languages.  
 
 ## Testing
-The employer and recruiter user story achieved the intended outcome of providing them with a showcase of myself and my work. In the about me section, they can read a bit about my background, and if they're viewing on a desktop, the background of this section is a photo of me. They are able to see my showcased projects via the project cards in the "Work" section. They can view both the live version and the GitHub repository by clicking on the Font Awesome icons. They are also able to view my social media profiles via clicking on the icons in the footer. They are also able to download my CV by either clicking on CV in the navbar dropdown, or by clicking on the document icon in the footer. 
+The employer and recruiter user story achieved the intended outcome of providing them with a showcase of myself and my work. 
+In the about me section, they can read about the skills I have acquired through the Code Institute, and if they're viewing on a desktop, the background of this section is a photo of me. 
+They are also able to view my social media profiles via clicking on the icons in the footer. 
+They are also able to download my CV by either clicking on CV in the footer, or by clicking on the button in the carousel. 
+The CV will download to your default folder for downloads on click using the 'download' attribute. 
+All links have been manually tested to ensure that they are pointing to the correct destination.
 
-If you try to submit the contact form with an invalid email address, there will be an error noting the invalid email address. Furthermore, the 'required' attribute is added to the 'name,' 'email,' and 'message' fields, so if those fields are not filled in, the form will not submit. If all field are valid, the page will reload. If an employer or recruiter is interested in contacting me, they will have to fill out all fields in order for the form to go through.
+By clicking on the links in the navbar, the scrollSpy effect will work.
 
-All links will open in a new tab using 'target="_blank"' and the CV will download to your default folder for downloads on click using the 'download' attribute. All links have been manually tested to ensure that they are pointing to the correct destination.
-
-By clicking on the links in the navbar, the scrollSpy effect will work regardless of whether or not you're viewing the sections in the same order they are listed in the dropdown navbar. 
-
-This site was tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) to ensure compatibility and responsiveness. During the testing phase, I realized that ```background-attachment: fixed``` was not compatible with iOS browsers. On Chrome and Safari in iOS, the background photos appeared zoomed-in and blurry. To fix this, the ```background-attachment: scroll``` property value was added in a media query.
+This site was tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) to ensure compatibility and responsiveness. 
+I added a media query to remove the background from the about section when viewing on smaller screen sizes so that the font doesn't blend in to the image. 
 
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
-To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/hschafer2017/HSCHAFER-Portfolio.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
-
-
-## Credits
+To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/shumonsta/Shahinoor.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
 
 ### Content
 All content on the website were written by me. 
 
 ### Media
 
-All photos were taken from [Pexels](https://www.pexels.com/), a stock image library, with the exception of the photo of myself in the background of the 'about me/À Propos' section in the desktop view. A greyscale filter was applied to each one prior to upload to preserve the greyscale theme. 
+All photos were taken from [Google Images](https://www.google.com/), with the exception of the photo of myself in the background of the 'about me' section in the desktop view.
 
 ### Acknowledgements
-The scrollSpy delay JavaScript function was found through this tutorial [here](https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2).
+The scrollSpy delay JavaScript function was found through this tutorial [here](https://getbootstrap.com/docs/4.0/components/scrollspy/).
+The Carousel and the Product templates were taken from Bootstrap websites:
+[Product](https://getbootstrap.com/docs/4.0/examples/product/)
 
-The progress circles from the skills section are modeled after the following Stack Overflow [example](https://stackoverflow.com/questions/14222138/css-progress-circle). They were significantly modified to fit the styling, sizing, and progress for each skill.
+[Carousel](https://getbootstrap.com/docs/4.0/examples/carousel/)
 
-The media query for the collapsed navbar regardless of viewport width was taken from this [site](https://www.codeply.com/go/iaM1zcNsQB/bootstrap-navbar-always-collapsed).

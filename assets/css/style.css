@@ -6,15 +6,12 @@ body {
     max-width: 960px;
 }
 
-
-
 /*
  * Carousel
  */
 img {
     opacity: 0.6;
 }
-
 
 /*
  * Background Image
@@ -89,11 +86,15 @@ img {
     }
 }
 
-.bg-color {
-    background-color: #e3edf9;
+@media (min-width: 992px) {
+    .background-img {
+        background-image: url('/assets/img/shu15.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+    }
 }
 
-/* Bootstrap overrides */
-.bg-dark {
-    background-color: #723094;
+.bg-color {
+    background-color: #e3edf9;
 }
